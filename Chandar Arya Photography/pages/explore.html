@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="/img/profile.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  @font-face {
+    font-family: "Raiderfont";
+    src: local("Raiderfont"), url("/fonts/Raiderfont.ttf") format("truetype");
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 794px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 794px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <a style="text-decoration: none;" href="../index.html">
+      <h1 style="
+  font-family:Montserrat;
+  flex: 1;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: rgb(218, 213, 213);
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+  ">CHANDAR ARYA PHOTOGRAPHY</h1>
+    </a>
+    <p style="
+  font-family:Montserrat;
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #b3b4af;
+  ">EXPLORE</p>
+  </div>
+
+  <!-- Photo Grid -->
+  <div class="row">
+    <div class="column">
+      <img src="/img/MiddlePic.png" style="width:100%">
+      <img src="/img/profile.jpg" style="width:100%">
+      <img src="/img/MiddlePic1.png" style="width:100%">
+      <img src="/img/MiddlePic.png" style="width:100%">
+      <img src="/img/MiddlePic1.png" style="width:100%">
+      <img src="/img/profile.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="/img/profile.jpg" style="width:100%">
+      <img src="/img/MiddlePic.png" style="width:100%">
+      <img src="/img/profile.jpg" style="width:100%">
+      <img src="/img/MiddlePic.png" style="width:100%">
+      <img src="/img/MiddlePic1.png" style="width:100%">
+      <img src="/img/MiddlePic1.png" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="/img/MiddlePic.png" style="width:100%">
+      <img src="/img/MiddlePic1.png" style="width:100%">
+      <img src="/img/profile.jpg" style="width:100%">
+      <img src="/img/MiddlePic.png" style="width:100%">
+      <img src="/img/MiddlePic1.png" style="width:100%">
+      <img src="/img/profile.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="/img/MiddlePic1.png" style="width:100%">
+      <img src="/img/MiddlePic.png" style="width:100%">
+      <img src="/img/MiddlePic.png" style="width:100%">
+      <img src="/img/MiddlePic1.png" style="width:100%">
+      <img src="/img/profile.jpg" style="width:100%">
+      <img src="/img/profile.jpg" style="width:100%">
+    </div>
+  </div>
+
+</body>
+
+</html>

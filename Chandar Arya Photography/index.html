@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="/img/profile.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Chandar Arya Photography</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="left__container">
+      <div class="left"></div>
+    </div>
+    <div class="right"></div>
+
+    <nav class="nav">
+      <ul>
+        <a href="index.html">
+          <li class="logo">Chandar Arya</li>
+        </a>
+        <a href="/pages/explore.html">
+          <li class="explore">explore</li>
+        </a>
+        <li class="profile">
+          <div class="img"></div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+
+      <div class="hero__img">
+
+
+
+        <div class="img-wrapper">
+          <div class="karina"></div>
+        </div>
+
+        <div class="info">
+          <ul>
+            <a href="https://www.behance.net/chandararya1" target="_blank">
+              <li>Behance</li>
+            </a>
+            <a href="https://www.instagram.com/chandararyaphotography/" target="_blank">
+              <li>instagram</li>
+            </a>
+            <a href="index.html">
+              <li>chandarArya.com</li>
+            </a>
+            <li><i class="fa fa-share-alt"></i></li>
+          </ul>
+        </div>
+
+        <div class="name">Chandar Arya</div>
+
+
+
+      </div>
+
+      <div class="hero__content">
+
+
+        <div class="text">
+          <a style="text-decoration: none;
+          font-family: Montserrat;" href="./pages/explore.html">
+            <h1>Chandar Arya</h1>
+          </a>
+          <p style="color:rgb(255, 255, 255);
+          font-weight:bolder;
+          font-style:italic;">Fashion Photographer</p>
+        </div>
+
+        <div class="bottomnav">
+          <ul>
+            <li>profile</li>
+            <a style="font-weight: bolder;" href="./pages/explore.html">
+              <li style="text-decoration: double;
+                text-decoration-color: white;">portfolio </li>
+            </a>
+            <li>contact</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+
+
+    (function () {
+
+      function checkMediaQuery(mediaQueryTest) {
+        if (mediaQueryTest.matches) { // If media query matches
+
+          TweenMax.from('.info', 2, {
+            delay: 2,
+            y: 100,
+            opacity: 0,
+            ease: Circ.easeInOut
+          })
+        } else {
+
+          TweenMax.from('.info', 2, {
+            delay: 1.5,
+            y: 100,
+            ease: Circ.easeInOut
+          })
+
+        }
+      }
+
+      var mediaQueryTest = window.matchMedia("(max-width: 767px)");
+      checkMediaQuery(mediaQueryTest) // Call listener function at run time
+      mediaQueryTest.addListener(checkMediaQuery) // Attach listener function on state changes
+
+
+      TweenMax.to('.left__container', 2, {
+        delay: .8,
+        width: '50%',
+        ease: Power2.easeInOut
+      })
+
+      TweenMax.to('.left', 2, {
+        delay: .9,
+        width: '100%',
+        ease: Power2.easeInOut
+      })
+
+
+      TweenMax.to('.right', 2, {
+        delay: .6,
+        width: '50%',
+        ease: Power3.easeInOut
+      })
+
+      TweenMax.from('.nav', 2, {
+        delay: .8,
+        opacity: 0,
+        ease: Expo.easeInOut
+      })
+
+      TweenMax.from('.text h1', 2, {
+        delay: .6,
+        x: 1000,
+        ease: Circ.easeInOut
+      })
+
+      TweenMax.from('.text p', 2, {
+        delay: .7,
+        x: 1000,
+        ease: Circ.easeInOut
+      })
+
+      TweenMax.from('.karina', 2, {
+        delay: 1.5,
+        width: '0',
+        ease: Power2.easeInOut
+      })
+
+      TweenMax.staggerFrom('.bottomnav ul li', 2, {
+        delay: 1,
+        x: 1000,
+        ease: Circ.easeInOut
+      }, 0.08)
+
+
+
+      TweenMax.from('.name', 2, {
+        delay: 1.5,
+        x: -600,
+        ease: Circ.easeInOut
+      })
+
+    })();
+
+
+  </script>
+</body>
+
+</html>
